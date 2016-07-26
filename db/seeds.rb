@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+5.times do
+  Team.create(name: Faker::Team.sport)
+end
+
+Team.all.each do |team|
+  rand(10).times do
+    Player.create(team: team, name: Faker::Name.name)
+  end
+end
