@@ -2,4 +2,7 @@
 
 Simple API for learning and exercises.
 
-Create your fantasy sports team, add players, etc.
+You can:
+
+- CRUD teams on conventional endpoints (GET /teams, GET /teams/:id, etc)
+- CRUD players on conventional endpoints (POST /players, PUT /players/:id, etc)
